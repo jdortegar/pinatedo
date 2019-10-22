@@ -3,22 +3,20 @@
     &:last-child {
       margin-right: 0;
     }
+
     margin: 0 20px;
   }
-  &.navbar-ligth {
-    background: #fff;
-  }
+
   a {
-    color: #000;
-    text-transform: uppercase;
+    color: #fff;
     cursor: pointer;
+
     &:hover {
-      color: #1b9df8 !important;
+      color: #FFBB4D !important;
     }
 
     &.active {
-      color: #1b9df8;
-      font-weight: 600;
+      color: #FFBB4D;
     }
   }
 }

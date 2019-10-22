@@ -1,8 +1,47 @@
-.Section-first {
-  padding: 100px 0
-}
-
 .HomePage {
   background: url(/assets/img/img-background.png) no-repeat;
   background-size: 100%;
+  background-color: rgb(255, 255, 255);
+  background-color: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(220, 229, 239, 1) 35%);
+}
+
+
+.Section-1 {
+  padding: 100px 0;
+  color: #FFF;
+
+  h3,
+  p {
+    margin-bottom: 20px
+  }
+}
+
+.Section-2 {
+  padding: 100px 0;
+
+  .container {
+    padding: 0
+  }
+
+
+  .Section-2-column {
+    background: #FFBB4D;
+    padding: 30px;
+    min-height: 270px;
+    border-radius: 5px;
+
+
+
+    h4 {
+      margin-bottom: 20px
+    }
+  }
+}
+
+.Section-3 {
+  padding: 100px 0;
+}
+
+.Section-4 {
+  padding: 100px 0;
 }

@@ -7,12 +7,35 @@ html {
   font-family: 'Merriweather', serif;
 }
 
-// Header
-
-.Pinatedo-menu{
-
+@font-face {
+  font-family: 'Conv_Cera Pro Regular';
+  src: url('/assets/fonts/Cera Pro Regular.eot');
+  src: local('☺'), url('/assets/fonts/Cera Pro Regular.woff') format('woff'), url('/assets/fonts/Cera Pro Regular.ttf') format('truetype'), url('/assets/fonts/Cera Pro Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.Home-sectionOne{
-  background: url('assets/img/img-background.png')
+@font-face {
+  font-family: 'Conv_Cera Pro Bold';
+  src: url('/assets/fonts/Cera Pro Bold.eot');
+  src: local('☺'), url('/assets/fonts/Cera Pro Bold.woff') format('woff'), url('/assets/fonts/Cera Pro Bold.ttf') format('truetype'), url('/assets/fonts/Cera Pro Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_Cera Pro Medium';
+  src: url('/assets/fonts/Cera Pro Medium.eot');
+  src: local('☺'), url('/assets/fonts/Cera Pro Medium.woff') format('woff'), url('/assets/fonts/Cera Pro Medium.ttf') format('truetype'), url('/assets/fonts/Cera Pro Medium.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+// Header
+
+.Pinatedo-menu {
+  margin: 0 8.33333%;
+  padding: 0
 }

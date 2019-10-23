@@ -9293,33 +9293,58 @@ html {
 
 /* Custom Mixins -------------------- */
 /* Base Styles -------------------- */
-*,
-html {
-  font-family: 'Merriweather', serif; }
-
 @font-face {
-  font-family: 'Conv_Cera Pro Regular';
+  font-family: 'CeraPro';
   src: url("/assets/fonts/Cera Pro Regular.eot");
   src: local("☺"), url("/assets/fonts/Cera Pro Regular.woff") format("woff"), url("/assets/fonts/Cera Pro Regular.ttf") format("truetype"), url("/assets/fonts/Cera Pro Regular.svg") format("svg");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Conv_Cera Pro Bold';
+  font-family: 'CeraPro';
   src: url("/assets/fonts/Cera Pro Bold.eot");
   src: local("☺"), url("/assets/fonts/Cera Pro Bold.woff") format("woff"), url("/assets/fonts/Cera Pro Bold.ttf") format("truetype"), url("/assets/fonts/Cera Pro Bold.svg") format("svg");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Conv_Cera Pro Medium';
+  font-family: 'CeraPro';
   src: url("/assets/fonts/Cera Pro Medium.eot");
   src: local("☺"), url("/assets/fonts/Cera Pro Medium.woff") format("woff"), url("/assets/fonts/Cera Pro Medium.ttf") format("truetype"), url("/assets/fonts/Cera Pro Medium.svg") format("svg");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal; }
 
+*,
+html {
+  font-family: 'CeraPro', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif; }
+
+a:hover {
+  color: #FFBB4D; }
+
+.text-bold {
+  font-weight: 700; }
+
+.img-max {
+  width: 100%; }
+
+.margin-titles {
+  margin-bottom: 20px; }
+
+.carousel-arrow {
+  width: 40px;
+  fill: #D2D2D1; }
+  .carousel-arrow:hover {
+    fill: #1D1D1B; }
+  .carousel-arrow.left {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
 .Pinatedo-menu {
-  margin: 0 8.33333%;
+  margin-left: 16.66667%;
+  margin-right: 8.33333%;
   padding: 0; }
 
 .navbar .nav-item {
@@ -9354,9 +9379,6 @@ footer {
 .Section-1 {
   padding: 100px 0;
   color: #FFF; }
-  .Section-1 h3,
-  .Section-1 p {
-    margin-bottom: 20px; }
 
 .Section-2 {
   padding: 100px 0; }
@@ -9372,8 +9394,14 @@ footer {
 
 .Section-3 {
   padding: 100px 0; }
+  .Section-3 h5 {
+    font-family: 'CeraPro', sans-serif; }
 
 .Section-4 {
   padding: 100px 0; }
+  .Section-4 h5 {
+    font-family: 'CeraPro', sans-serif; }
+  .Section-4 .caption {
+    margin-left: 8.33333%; }
 
 /*# sourceMappingURL=main.css.map */

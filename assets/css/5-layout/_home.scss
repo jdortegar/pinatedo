@@ -10,10 +10,6 @@
   padding: 100px 0;
   color: #FFF;
 
-  h3,
-  p {
-    margin-bottom: 20px
-  }
 }
 
 .Section-2 {
@@ -40,8 +36,20 @@
 
 .Section-3 {
   padding: 100px 0;
+
+  h5 {
+    font-family: 'CeraPro', sans-serif;
+  }
 }
 
 .Section-4 {
   padding: 100px 0;
+
+  h5 {
+    font-family: 'CeraPro', sans-serif;
+  }
+
+  .caption {
+    margin-left: 8.33333%;
+  }
 }

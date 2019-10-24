@@ -9342,6 +9342,14 @@ a:hover {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 
+.btn-link {
+  background: #FFBB4D;
+  font-family: 'CeraPro', sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0.375rem 1.5rem;
+  font-weight: 500; }
+
 .Pinatedo-menu {
   margin-left: 16.66667%;
   margin-right: 8.33333%;
@@ -9362,46 +9370,162 @@ a:hover {
 
 footer {
   background: #1E2A37;
-  color: #fff; }
-  footer a {
-    font-family: 'Conv_Cera Pro Regular', sans-serif; }
-  footer ul img {
-    max-width: 22px !important; }
-  footer .UpButton img {
-    max-width: 22px !important; }
+  color: #fff;
+  padding: 20px; }
+  footer .row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    footer ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      footer ul li.city-margin {
+        min-width: 225px;
+        -webkit-box-align: self-start;
+            -ms-flex-align: self-start;
+                align-items: self-start; }
+    footer ul a {
+      font-family: 'Conv_Cera Pro Regular', sans-serif; }
+    footer ul img {
+      margin-right: 5px;
+      max-width: 22px !important; }
+  footer .UpButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: start;
+        align-content: flex-start; }
+    footer .UpButton img {
+      max-width: 50px !important; }
 
 .HomePage {
+  background: url(/assets/img/img-background-home.jpg) no-repeat;
+  background-size: 100%;
+  background-color: white;
+  background-color: linear-gradient(180deg, white 0%, #dce5ef 35%); }
+  .HomePage .Section-1 {
+    padding: 200px 0 100px 0;
+    color: #FFF; }
+    .HomePage .Section-1 h5 {
+      font-family: 'CeraPro', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .HomePage .Section-1 h1 {
+      font-size: 2.3rem;
+      line-height: 1.5; }
+    .HomePage .Section-1 .title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start;
+      margin-left: -50px; }
+      .HomePage .Section-1 .title img {
+        margin-top: 5px;
+        margin-right: 30px; }
+  .HomePage .Section-2 {
+    padding: 50px 0 100px;
+    color: #fff; }
+    .HomePage .Section-2 h1 {
+      font-size: 2.3rem;
+      line-height: 1.5; }
+  .HomePage .Section-3 {
+    text-align: center; }
+    .HomePage .Section-3 .wrapper {
+      color: #fff;
+      text-align: center;
+      font-weight: 700; }
+    .HomePage .Section-3 .link {
+      display: block;
+      color: #FFBB4D;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 30px; }
+  .HomePage .Section-4 {
+    padding: 50px 0;
+    color: #fff; }
+    .HomePage .Section-4 h1 {
+      font-size: 2.3rem;
+      line-height: 1.5; }
+    .HomePage .Section-4 .carousel-indicators {
+      position: initial;
+      margin: 10px 0; }
+      .HomePage .Section-4 .carousel-indicators li {
+        width: 20%;
+        height: auto;
+        margin-left: 5px;
+        margin-right: 5px; }
+        .HomePage .Section-4 .carousel-indicators li:first-child {
+          margin-left: 0px; }
+        .HomePage .Section-4 .carousel-indicators li:last-child {
+          margin-right: 0px; }
+  .HomePage .Section-5 {
+    padding: 50px 0;
+    color: #fff; }
+    .HomePage .Section-5 h1 {
+      font-size: 2.3rem;
+      line-height: 1.5; }
+  .HomePage .Section-6 {
+    color: #fff; }
+    .HomePage .Section-6 .left {
+      background: url(/assets/img/img-taller-1.jpg) no-repeat;
+      background-size: cover; }
+    .HomePage .Section-6 .right {
+      background: url(/assets/img/img-taller-2.jpg) no-repeat;
+      background-size: cover; }
+    .HomePage .Section-6 .wrapper {
+      text-align: center;
+      padding: 100px 50px; }
+      .HomePage .Section-6 .wrapper h1 {
+        font-size: 2.3rem;
+        line-height: 1.5; }
+      .HomePage .Section-6 .wrapper h4 {
+        font-family: 'CeraPro', sans-serif; }
+
+.NosotrosPage {
   background: url(/assets/img/img-background.png) no-repeat;
   background-size: 100%;
   background-color: white;
   background-color: linear-gradient(180deg, white 0%, #dce5ef 35%); }
-
-.Section-1 {
-  padding: 100px 0;
-  color: #FFF; }
-
-.Section-2 {
-  padding: 100px 0; }
-  .Section-2 .container {
-    padding: 0; }
-  .Section-2 .Section-2-column {
-    background: #FFBB4D;
-    padding: 30px;
-    min-height: 270px;
-    border-radius: 5px; }
-    .Section-2 .Section-2-column h4 {
-      margin-bottom: 20px; }
-
-.Section-3 {
-  padding: 100px 0; }
-  .Section-3 h5 {
-    font-family: 'CeraPro', sans-serif; }
-
-.Section-4 {
-  padding: 100px 0; }
-  .Section-4 h5 {
-    font-family: 'CeraPro', sans-serif; }
-  .Section-4 .caption {
-    margin-left: 8.33333%; }
+  .NosotrosPage .Section-1 {
+    padding: 100px 0;
+    color: #FFF; }
+  .NosotrosPage .Section-2 {
+    padding: 100px 0; }
+    .NosotrosPage .Section-2 .container {
+      padding: 0; }
+    .NosotrosPage .Section-2 .Section-2-column {
+      background: #FFBB4D;
+      padding: 30px;
+      min-height: 270px;
+      border-radius: 5px; }
+      .NosotrosPage .Section-2 .Section-2-column h4 {
+        margin-bottom: 20px; }
+  .NosotrosPage .Section-3 {
+    padding: 100px 0; }
+    .NosotrosPage .Section-3 h5 {
+      font-family: 'CeraPro', sans-serif; }
+  .NosotrosPage .Section-4 {
+    padding: 100px 0; }
+    .NosotrosPage .Section-4 h5 {
+      font-family: 'CeraPro', sans-serif; }
+    .NosotrosPage .Section-4 .caption {
+      margin-left: 8.33333%; }
 
 /*# sourceMappingURL=main.css.map */

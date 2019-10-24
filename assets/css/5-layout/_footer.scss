@@ -1,20 +1,45 @@
 footer {
   background: #1E2A37;
   color: #fff;
+  padding: 20px;
 
-  a {
-    font-family: 'Conv_Cera Pro Regular', sans-serif;
+  .row {
+    justify-content: space-between;
   }
 
   ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+
+      &.city-margin {
+        min-width: 225px;
+        align-items: self-start;
+      }
+    }
+
+    a {
+      font-family: 'Conv_Cera Pro Regular', sans-serif;
+    }
+
     img {
+      margin-right: 5px;
       max-width: 22px !important;
     }
   }
 
   .UpButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+
     img {
-      max-width: 22px !important;
+      max-width: 50px !important;
     }
   }
 }

@@ -7,7 +7,7 @@
 .navbar {
   .nav-item {
     &:last-child {
-      margin-right: 0;
+      margin: 0;
     }
 
     margin: 0 20px;
@@ -16,6 +16,11 @@
   a {
     color: #fff;
     cursor: pointer;
+
+    .header-icon {
+      width: 37px;
+      height: auto;
+    }
 
     &:hover {
       color: #FFBB4D !important;

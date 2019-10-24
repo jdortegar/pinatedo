@@ -9358,11 +9358,14 @@ a:hover {
 .navbar .nav-item {
   margin: 0 20px; }
   .navbar .nav-item:last-child {
-    margin-right: 0; }
+    margin: 0; }
 
 .navbar a {
   color: #fff;
   cursor: pointer; }
+  .navbar a .header-icon {
+    width: 37px;
+    height: auto; }
   .navbar a:hover {
     color: #FFBB4D !important; }
   .navbar a.active {
@@ -9527,5 +9530,48 @@ footer {
       font-family: 'CeraPro', sans-serif; }
     .NosotrosPage .Section-4 .caption {
       margin-left: 8.33333%; }
+
+.ContactoPage {
+  background: url(/assets/img/img-background-contacto.jpg) no-repeat;
+  background-size: 100%;
+  background-color: white; }
+  .ContactoPage .Section-1 {
+    padding: 200px 0 100px 0;
+    color: #FFF; }
+    .ContactoPage .Section-1 h5 {
+      font-family: 'CeraPro', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .ContactoPage .Section-1 h1 {
+      font-size: 2.3rem;
+      line-height: 1.5; }
+    .ContactoPage .Section-1 ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .ContactoPage .Section-1 ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 20px; }
+        .ContactoPage .Section-1 ul li.city-margin {
+          min-width: 225px;
+          -webkit-box-align: self-start;
+              -ms-flex-align: self-start;
+                  align-items: self-start; }
+      .ContactoPage .Section-1 ul a {
+        font-family: 'Conv_Cera Pro Regular', sans-serif; }
+      .ContactoPage .Section-1 ul img {
+        margin-right: 15px;
+        max-width: 22px !important; }
+  .ContactoPage .Section-2 .row {
+    border-radius: 5px;
+    overflow: hidden; }
+    .ContactoPage .Section-2 .row .wrapper {
+      padding: 50px; }
+  .ContactoPage .Section-2 .left {
+    background: #fff; }
+  .ContactoPage .Section-2 .right {
+    background: #FFBB4D; }
 
 /*# sourceMappingURL=main.css.map */

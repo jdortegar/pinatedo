@@ -9564,14 +9564,52 @@ footer {
       .ContactoPage .Section-1 ul img {
         margin-right: 15px;
         max-width: 22px !important; }
-  .ContactoPage .Section-2 .row {
-    border-radius: 5px;
-    overflow: hidden; }
-    .ContactoPage .Section-2 .row .wrapper {
-      padding: 50px; }
-  .ContactoPage .Section-2 .left {
-    background: #fff; }
-  .ContactoPage .Section-2 .right {
-    background: #FFBB4D; }
+  .ContactoPage .Section-2 {
+    padding-bottom: 100px; }
+    .ContactoPage .Section-2 .row {
+      border-radius: 5px;
+      overflow: hidden; }
+      .ContactoPage .Section-2 .row .wrapper {
+        padding: 50px; }
+    .ContactoPage .Section-2 .left {
+      background: #fff; }
+      .ContactoPage .Section-2 .left .Form label {
+        font-size: 1.25rem; }
+      .ContactoPage .Section-2 .left .Form input,
+      .ContactoPage .Section-2 .left .Form select,
+      .ContactoPage .Section-2 .left .Form textarea {
+        border-top: none;
+        border-left: none;
+        border-right: none; }
+      .ContactoPage .Section-2 .left .Form .btn-link {
+        -webkit-box-shadow: 2px 2px 5px #bbb;
+                box-shadow: 2px 2px 5px #bbb; }
+    .ContactoPage .Section-2 .right {
+      background: #FFBB4D;
+      padding: 0; }
+      .ContactoPage .Section-2 .right .wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 0; }
+        .ContactoPage .Section-2 .right .wrapper #map {
+          width: 100%;
+          height: 100%;
+          background-color: grey; }
+        .ContactoPage .Section-2 .right .wrapper .location {
+          padding: 25px;
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+          width: 100%; }
+          .ContactoPage .Section-2 .right .wrapper .location .title {
+            text-transform: uppercase;
+            font-weight: 700; }
+          .ContactoPage .Section-2 .right .wrapper .location img {
+            width: 20px; }
 
 /*# sourceMappingURL=main.css.map */

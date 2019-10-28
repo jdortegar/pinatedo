@@ -184,14 +184,29 @@
   <script>
     var map;
     function initMap() {
+      var ubication = { lat: -34.6090238, lng: -58.5410577 };
       map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 8
+        center: ubication,
+        disableDefaultUI: true,
+        zoom: 14
+      });
+
+      var icon = {
+        url: '/assets/img/icn-contacto-geo.svg', // url
+        scaledSize: new google.maps.Size(50, 50), // scaled size
+      };
+
+      var marker = new google.maps.Marker({
+        position: ubication,
+        map: map,
+        icon: icon
       });
     }
   </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YAIzaSyCwJphXGrDs8opqc2Gls7-2xgl0HxixG7A&callback=initMap"
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwJphXGrDs8opqc2Gls7-2xgl0HxixG7A&callback=initMap"
     async defer></script>
+
+
 </body>
 
 </html>

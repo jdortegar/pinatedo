@@ -1,12 +1,20 @@
 .Pinatedo-menu {
-  margin-left: 16.66667%;
-  margin-right: 8.33333%;
-  padding: 0
+  padding: 10px 8.33333% 10px 16.66667%;
+  transition: background 0.5s;
+}
+
+.Pinatedo-menu-dark {
+  background: #1e2a37;
+  transition: background 0.5s;
 }
 
 .navbar {
 
   align-items: center;
+
+  .navbar-nav {
+    align-items: center;
+  }
 
   .nav-item {
     &:last-child {
@@ -16,9 +24,12 @@
     margin: 0 20px;
   }
 
+
+
   a {
     color: #fff;
     cursor: pointer;
+    transition: transform 1s;
 
     .header-icon {
       width: 37px;
@@ -26,7 +37,11 @@
     }
 
     &:hover {
-      color: #FFBB4D !important;
+
+      &.effect {
+        transform: translateY(-10px);
+        transition: transform 1s;
+      }
     }
 
     &.active {

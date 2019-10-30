@@ -1,6 +1,7 @@
 .ServiciosPage {
   background: rgb(45, 102, 210);
   background: linear-gradient(45deg, rgba(45, 102, 210, 1) 0%, rgba(21, 74, 97, 1) 100%);
+  padding-top: 86px;
 
 
   .Section-2 {
@@ -24,6 +25,7 @@
         color: #FFF;
         align-content: center;
         font-weight: 700;
+        font-size: 20px;
 
         &:hover {
           color: #FFBB4D;

@@ -1,8 +1,8 @@
 .HomePage {
   background: url(/assets/img/img-background-home.jpg) no-repeat;
-  background-size: 100%;
-  background-color: rgb(255, 255, 255);
-  background-color: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(220, 229, 239, 1) 35%);
+  background-size: cover;
+  background-color: rgb(45, 102, 210);
+  background-color: linear-gradient(45deg, rgba(45, 102, 210, 1) 0%, rgba(21, 74, 97, 1) 100%);
 
 
 
@@ -73,6 +73,12 @@
       line-height: 1.5;
     }
 
+    .carousel-controls-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .carousel-indicators {
       position: initial;
       margin: 10px 0;
@@ -107,33 +113,33 @@
     }
   }
 
-  .Section-6 {
-    color: #fff;
+  // ENDS
+}
 
-    .left {
-      background: url(/assets/img/img-taller-1.jpg) no-repeat;
-      background-size: cover;
-    }
+.Section-6 {
+  color: #fff;
 
-    .right {
-      background: url(/assets/img/img-taller-2.jpg) no-repeat;
-      background-size: cover;
-    }
-
-    .wrapper {
-      text-align: center;
-      padding: 100px 50px;
-
-      h1 {
-        font-size: 2.3rem;
-        line-height: 1.5;
-      }
-
-      h4 {
-        font-family: 'CeraPro', sans-serif;
-      }
-    }
+  .left {
+    background: url(/assets/img/img-taller-1.jpg) no-repeat;
+    background-size: cover;
   }
 
-  // ENDS
+  .right {
+    background: url(/assets/img/img-taller-2.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .wrapper {
+    text-align: center;
+    padding: 100px 50px;
+
+    h1 {
+      font-size: 2.3rem;
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-family: 'CeraPro', sans-serif;
+    }
+  }
 }

@@ -1,88 +1,34 @@
 $(document).ready(function() {
   // Get started!
 
-  /* 1. Visualizing things on Hover - See next part for action on click */
-  // $('#stars li')
-  //   .on('mouseover', function() {
-  //     var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
+  /*
+   * Include function
+   */
 
-  //     // Now highlight all the stars that's not after the current hovered star
-  //     $(this)
-  //       .parent()
-  //       .children('li.star')
-  //       .each(function(e) {
-  //         if (e < onStar) {
-  //           $(this).addClass('hover');
-  //         } else {
-  //           $(this).removeClass('hover');
-  //         }
-  //       });
-  //   })
-  //   .on('mouseout', function() {
-  //     $(this)
-  //       .parent()
-  //       .children('li.star')
-  //       .each(function(e) {
-  //         $(this).removeClass('hover');
-  //       });
-  //   });
-
-  /* 2. Action to perform on click */
-  // $('#stars li').on('click', function(e) {
-  //   e.stopPropagation();
-  //   var onStar = parseInt($(this).data('value'), 10); // The star currently selected
-  //   var stars = $(this)
-  //     .parent()
-  //     .children('li.star');
-
-  //   for (i = 0; i < stars.length; i++) {
-  //     $(stars[i]).removeClass('selected');
-  //   }
-
-  //   for (i = 0; i < onStar; i++) {
-  //     $(stars[i]).addClass('selected');
-  //   }
-  // });
-
-  //Get the button:
-  var mybutton = $('#myUpBtn');
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {
-    scrollFunction();
-  };
-
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      mybutton.show();
-    } else {
-      mybutton.hide();
-    }
-  }
-
-  // When the user clicks on the button, scroll to the top of the document
-  mybutton.on('click', function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  $(function() {
+    var includes = $('[data-include]');
+    jQuery.each(includes, function() {
+      var file = 'partials/' + $(this).data('include') + '.html';
+      $(this).load(file);
+    });
   });
 
-  // expand list
-  $('.most-popular-choice-element').each(function() {
-    var _this = this;
-    $(_this)
-      .find('.expand-triger')
-      .on('click', function() {
-        $(_this)
-          .find('.list-body')
-          .toggle();
-      });
-  });
+  /*
+   * To up button
+   */
+
+  setTimeout(() => {
+    $('.UpButton').on('click', function() {
+      debugger;
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+  }, 1000);
 
   /*
    * Replace all SVG images with inline SVG
    */
+
   $('img.svg').each(function() {
     var $img = $(this);
     var imgID = $img.attr('id');
@@ -126,40 +72,47 @@ $(document).ready(function() {
     );
   });
 
-  $('.most-popular-list li')
-    .not('.most-popular-list li:first-child')
-    .each(function() {
-      var _this = this;
-      $(_this).hover(
-        function() {
-          console.log('over');
-          $(_this).addClass('active');
-          $('.most-popular-list li:first-child').removeClass('active');
-        },
-        function() {
-          console.log('over');
-          $(_this).removeClass('active');
-          $('.most-popular-list li:first-child').addClass('active');
-        }
-      );
+  /*
+   * Menu background
+   */
+
+  $(window).scroll(function() {
+    $(window).scrollTop() > 50
+      ? $('.Pinatedo-menu').addClass('Pinatedo-menu-dark')
+      : $('.Pinatedo-menu').removeClass('Pinatedo-menu-dark');
+  });
+
+  /*
+   * Servicios elements
+   */
+
+  $('.servicios-container a').each(function() {
+    $(this).on('click', function() {
+      debugger;
+      var element = $(this);
+      var imageSrc = element.data('image');
+      $('.service-image').attr('src', `/assets/img/${imageSrc}.jpg`);
     });
+  });
 
-  $('.most-popular-choice-list li').each(function() {
-    var _this = this;
-    $(this).click(function(e) {
-      window.open(
-        $(_this)
-          .find('.link-section a')
-          .attr('href'),
-        '_blank'
-      );
-      $(this)
-        .find('a')
-        .click(function(e) {
-          e.stopPropagation();
+  /*
+   * Content for modals
+   */
+
+  $('.openPopup').on('click', function() {
+    var dataURL = $(this).data('content');
+    $('.modal-body').load(dataURL, function() {
+      $('#TallerModal').modal({ show: true });
+      // Load images for Palmira
+      $('#carouselPalmira').on('slide.bs.carousel', function() {
+        $('.videoElement').each(function() {
+          debugger;
+          var link = $(this).attr('src');
+          $(this)
+            .removeAttr('src')
+            .attr('src', link);
         });
-
-      return false;
+      });
     });
   });
 

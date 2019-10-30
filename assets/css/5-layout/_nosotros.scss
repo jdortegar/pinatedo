@@ -4,8 +4,6 @@
   background-color: rgb(255, 255, 255);
   background-color: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(220, 229, 239, 1) 35%);
 
-
-
   .Section-1 {
     padding: 100px 0;
     color: #FFF;
@@ -47,6 +45,10 @@
 
     h5 {
       font-family: 'CeraPro', sans-serif;
+    }
+
+    .carousel-controls {
+      text-align: right;
     }
 
     .caption {
